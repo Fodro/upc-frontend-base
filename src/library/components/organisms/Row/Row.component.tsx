@@ -33,7 +33,7 @@ export const Row: React.FC<RowProps> = ({
 			</LabelText>
 			<Bar barWidth={barWidth} style={styles.bar} />
 			<LabelText style={[styles.label]}>
-				{populationData.population.toString()}
+				{(populationData.population * 1000).toString()}
 			</LabelText>
 		</div>
 	);
